@@ -59,5 +59,10 @@ end
 
 def winner(board)
   winning_combo = won?(board)
-  winning_combo[0]
+  if winning_combo[0] == 0
+    "X"
+  else
+    "O"
+  end  
+
 end
