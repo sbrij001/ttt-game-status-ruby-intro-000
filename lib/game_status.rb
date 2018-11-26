@@ -59,11 +59,12 @@ end
 
 def winner(board)
   winning_combo = won?(board)
+  if won?(board) == false
+    nil
+  end  
   if winning_combo[0] == 0
     "X"
-  elsif winning_combo[0] == 1
-    "O"
   else
-    nil
+    "O"
   end
 end
