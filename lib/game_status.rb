@@ -58,10 +58,10 @@ def over?(board)
 end
 
 def winner(board)
-  draw?(board)
-    nil
   winning_combo = won?(board)
-  if winning_combo[0] == 0
+  if winning_combo == false || winning_combo == falsy 
+    nil 
+  elsif winning_combo[0] == 0
     "X"
   else
     "O"
